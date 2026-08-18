@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+
+  --color-brand: #2d5ff0;
+  --color-brand-light: #3ea0d8;
+  --color-brand-dim: #7fa8f5;
+}
+
+:root {
+  --bg: #fbfbfd;
+  --bg-elevated: #ffffff;
+  --surface: #f4f5f7;
+  --text: #0b0c10;
+  --text-muted: #55585f;
+  --border: rgba(11, 12, 16, 0.09);
+  --border-strong: rgba(11, 12, 16, 0.16);
+  --ring: rgba(45, 95, 240, 0.35);
+  --shadow-color: 220 30% 60%;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0a0a0c;
+  --bg-elevated: #131317;
+  --surface: #17181c;
+  --text: #f5f6f8;
+  --text-muted: #a1a3ab;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --ring: rgba(62, 160, 216, 0.4);
+  --shadow-color: 220 60% 4%;
+  color-scheme: dark;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-brand);
+  color: white;
+}
+
+/* thin, unobtrusive scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+  border: 3px solid var(--bg);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
