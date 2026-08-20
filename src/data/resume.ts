@@ -11,7 +11,7 @@ export const profile = {
   linkedin: "#",
   github: "#",
   summary:
-    "Ingeniero de Sistemas en formación en la Universidad César Vallejo (sede Piura), con experiencia construyendo software en Java, PHP, JavaScript, MySQL, SQL y Firebase. Diseño e implemento soluciones frontend y backend con Laravel, Spring y Tailwind CSS, apoyado en Git, GitHub, Postman y Bruno para un flujo de trabajo prolijo de principio a fin.",
+    "Ingeniero de Sistemas en formación en la Universidad César Vallejo, con experiencia construyendo software full-stack en Java, PHP, JavaScript, MySQL, SQL y Firebase. Actualmente me desempeño como QA Manual and Automation en Ensolvers, diseñando y automatizando pruebas con Playwright y Cypress, e integrando testing en pipelines de CI/CD junto a equipos Agile. Esta doble mirada —construir y validar software— se apoya en Git, GitHub y Postman para entregar soluciones frontend y backend más robustas, de principio a fin.",
 };
 
 export const skills = {
@@ -34,8 +34,18 @@ export const skills = {
     "Arquitectura Hexagonal",
     "Git & GitHub",
     "Postman / Bruno",
-    "ORM",
-    "Debugging",
+  ],
+  "QA & Testing": [
+    "Playwright",
+    "Cypress",
+    "Selenium",
+    "Testing manual",
+    "Diseño de casos de prueba",
+    "CI/CD",
+    "Jira",
+    "Notion",
+    "Agile / Scrum",
+    "QA potenciado por IA",
   ],
 };
 

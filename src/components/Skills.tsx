@@ -11,7 +11,7 @@ export default function Skills() {
       <div className="mx-auto max-w-6xl px-6 py-28 sm:py-36">
         <SectionHeading eyebrow="Habilidades" title="Con lo que construyo" />
 
-        <div className="mt-12 grid gap-10 sm:grid-cols-2">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {Object.entries(skills).map(([group, items], gi) => (
             <Reveal key={group} delay={gi * 0.1}>
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--text-muted)]">
